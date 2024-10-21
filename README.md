@@ -1,5 +1,7 @@
 # FExplorerRestarter
 
+[![Build Project](https://github.com/sipsuru/FExplorerRestarter/actions/workflows/msbuild.yml/badge.svg)](https://github.com/sipsuru/FExplorerRestarter/actions/workflows/msbuild.yml)
+
 ## What's & How?
 Explorer Restarter is a simple extremely lightweight non-customizable console application written in C++ for Restart File Explorer on a predefined key combination.
 
@@ -16,7 +18,7 @@ The default Key Combination is `Ctrl + Alt + R`
 > If you wanna your own key combination, you need to edit the source, but the predefined key combination is the most unique and uncommon key combination I could found. (Of course may not valid for you.)
 
 ## How to Build
-You can import the project to Visual Studio, but the easy way is to built using GitHub Action Workflow
+You can import the project to Visual Studio, but the easy way is to built using GitHub Action Workflow - [![Build Project](https://github.com/sipsuru/FExplorerRestarter/actions/workflows/msbuild.yml/badge.svg)](https://github.com/sipsuru/FExplorerRestarter/actions/workflows/msbuild.yml)
 
 ## Additional
 We can add the application to `Startup Apps`, so more hassle free.
