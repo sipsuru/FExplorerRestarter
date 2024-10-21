@@ -42,4 +42,4 @@ jobs:
       with:
         name: build-${{ matrix.platform }}
         path: |
-          FExplorerRestarter/Release/*.exe
+          *.exe
