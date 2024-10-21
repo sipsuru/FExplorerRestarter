@@ -37,18 +37,10 @@ jobs:
       run: |
         msbuild ${{env.SOLUTION_FILE_PATH}} /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Platform=${{ matrix.platform }} -verbosity:diag
         
-    - name: Find and Upload Build Artifacts
-      run: |
-        # Search for .exe files in the entire project folder
-        for file in $(find . -name "*.exe"); do
-          echo "Found executable: $file"
-          echo "$file" >> files_to_upload.txt
-        done
-      shell: bash
-
     - name: Upload .exe Files
       uses: actions/upload-artifact@v4
       with:
         name: build-${{ matrix.platform }}
         path: |
-          $(cat files_to_upload.txt)
+          ./${{ matrix.platform }}/Release/FExplorerRestarter.exe
+
